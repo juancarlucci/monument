@@ -1,0 +1,306 @@
+// variables
+$fontMain: "Relaway"
+$fontPara: "Lato"
+
+//colors
+$white: #fff
+$color_trout: #44545e
+$color_gumbo: #7b98aa
+$color_humming_bird: #D4F2F5
+$color_gunsmoke: #7c878e
+$color_carnation: #ed5254
+$color_bali_hai: #899ead
+
+//media queries
+//http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+$information-phone: "only screen and (max-width : 20.000em)"
+$break-small: 26.250em
+
+//* ----------------------------------------
+//Base Styles
+//------------------------------------------- */
+nav
+  position: sticky
+  top: 0
+  left: 0
+  // right: 0
+  background-color: $white
+  text-align: center
+  padding: 1.250em 17.188em
+  display: flex
+  align-items: center
+  justify-content: space-around
+  z-index: 1
+  @media screen and (max-width: $break-small)
+    display: block
+    width: 100%
+    padding: 10px 0px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+// .hamburger
+//   display: none
+//   transition: all 1s
+//   -webkit-transition: all 1s
+//   @media screen and (max-width: $break-small)
+//       display: block
+//       color: $white
+//       font-size: 1.7rem
+//       position: absolute
+//       top: 1em
+//       left: 1.3em
+
+a
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  text-decoration: none
+  color: $color_gumbo
+  letter-spacing: 0.063em
+  font-size: 1.125em
+  margin: 0 1.250em
+  border-bottom: 0.125em solid transparent
+  transition: all 1s
+  -webkit-transition: all 1s
+  &:hover
+    border-color: $color_gumbo
+
+p
+  color: $color_trout
+
+
+.vertically-centered
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  -ms-flex-wrap:  wrap
+  flex-wrap:  wrap
+
+h2,
+h3
+  font-family: $fontMain, sans-serif
+  // font-weight: 600
+  color: #0d2c40
+  color: $color_gunsmoke
+  text-transform: uppercase
+  letter-spacing: 0.063em
+
+ul
+  list-style: none
+  padding-left: 0px
+
+.wrap
+  max-width: 78em
+  width: 100%
+  margin: 0 auto
+
+fieldset
+  text-align: left
+  border: none
+  margin-top: 3.750em
+  margin-bottom: 6em
+
+fieldset h2
+  text-align: center
+
+fieldset .input
+  width: 100%
+  height: 5em
+
+
+#user_name,
+#user_email
+  width: 49%
+  height: 5em
+  display: inline-block
+  @media screen and (max-width: $break-small)
+    display: block
+    width: 100%
+
+#user_email
+  float: right
+
+#user_comment
+  height: 15em
+
+::placeholder
+    line-height: 4em
+
+.input
+  margin: 1em 0 1em
+  border: 0.063em solid $color_gunsmoke
+
+.submit
+  background-color: $color_trout
+  color: $white
+  width: 100%
+  text-align: center
+  transition: all 1s
+  -webkit-transition: all 1s
+  &:hover
+    background-color: $white
+    color: $color_trout
+
+footer
+  background-color: $color_humming_bird
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  font-size: 1em
+  text-align: center
+  letter-spacing: 0.08em
+  font-weight: 500
+  padding: 0 1.250em
+  width: 100%
+  input
+    text-align: center
+  .submit
+    background-color: $color_humming_bird
+    color: $color_trout
+    text-align: center
+    text-transform: uppercase
+    border: 0.063em solid $color_gunsmoke
+    width: 14em
+    height: 3em
+    margin: 2em
+    transition: all 1s
+    -webkit-transition: all 1s
+    &:hover
+      background-color: $color_trout
+      color: $white
+  @media screen and (max-width: $break-small)
+    padding: 0
+
+.social
+  color: $color_trout
+  padding: 2.813em
+  i
+    padding: .2em
+    transition: all 1s
+    -webkit-transition: all 1s
+    &:hover
+      // border-bottom: 0.1em solid $color_trout
+      transform: scale(0.7)
+
+
+#user_email2
+  text-transform: uppercase
+  height: 3em
+  width: 27em
+
+.copyright
+  font-family: $fontPara
+  font-weight: 400
+  color: $color_trout
+  border-top: 0.125em solid $color_trout
+  padding: 1.25em
+  transition: all 1s
+  -webkit-transition: all 1s
+  &:hover
+    color: $color_carnation
+    // transform: scale(1.2)
+
+//* ----------------------------------------
+//Forms
+//------------------------------------------- */
+
+#contact
+  padding-top: 2rem
+  h2
+    text-align: center
+
+
+form
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+
+form button
+  width: 100%
+  background-color: $color_trout
+
+
+textarea
+  width: 100%
+  display: block
+
+
+input, textarea
+  border: 2px solid $color_trout
+  margin-bottom: 12px
+  margin-bottom: .8rem
+  padding: 10px 10px
+  outline: 0
+
+.error
+  border: 2px solid $color_carnation
+
+.error-message
+  margin: -8px 0 12px
+  text-align: left
+  font-size: .9rem
+  color: $color_carnation
+  display: none
+
+
+.form-group,
+.form-group input,
+.form-group:last-of-type
+  width: 100%
+
+
+
+::-webkit-input-placeholder
+  color: $color_gunsmoke
+  text-transform: uppercase
+  letter-spacing: 0.75px
+  letter-spacing: .05rem
+  font-size: 12.299px
+  font-size: .82rem
+  font-weight: 600
+
+
+::-moz-placeholder
+  color: $color_gunsmoke
+  text-transform: uppercase
+  letter-spacing: 0.75px
+  letter-spacing: .05rem
+  font-size: 12.299px
+  font-size: .82rem
+  font-weight: 600
+
+
+::-moz-placeholder
+  color: $color_gunsmoke
+  text-transform: uppercase
+  letter-spacing: 0.75px
+  letter-spacing: .05rem
+  font-size: 12.299px
+  font-size: .82rem
+  font-weight: 600
+
+
+::-ms-input-placeholder
+  color: $color_gunsmoke
+  text-transform: uppercase
+  letter-spacing: 0.75px
+  letter-spacing: .05rem
+  font-size: 12.299px
+  font-size: .82rem
+  font-weight: 600

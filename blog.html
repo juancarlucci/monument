@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monument Blog Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,600i%7CRaleway:500,600" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/blog.css">
+
+  <!-- SCRIPTS -->
+	<script defer src="./js/jquery-1.7.1.js"></script> <!-- jQuery -->
+	<script defer src="./js/main.js"></script> <!-- main.js -->
+	<!-- END SCRIPTS -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <a href="#about">About</a>
+      <!-- https://stackoverflow.com/questions/21600425/navigate-to-anchor-on-another-page -->
+      <a href="index.html#gallery">Gallery</a>
+      <a href="#blog-entries">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <header id="blog-header">
+      <h1>Monument</h1>
+    </header>
+
+    <main class="flex" id="blog-entries">
+      <section id="column-one">
+        <header id="blog-entries-header">
+          <p id="blogDate">10/16/2018</p>
+          <h2>A VISUAL Guide TO THE SOUTHWEST</h2>
+        </header>
+        <section class="blogs">
+          <img src="images/blog_1.jpg" alt="desert photo, number 1" class="blogImages">
+          <p class="ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et fugiat tenetur quam sit iure autem non vero, illo, voluptas quasi ratione veniam reprehenderit atque nam iste animi laborum deserunt porro molestias qui dolores? Totam a beatae libero in quis debitis deleniti nulla ex veniam eveniet ratione maxime, at quisquam non accusamus cupiditate nobis tempora eum porro enim eligendi sit consequatur, numquam. Rem, harum, autem. Consectetur laboriosam, similique quaerat hic ipsam porro sed mollitia corporis illum recusandae? Ipsum facere consequatur, sed deleniti quod. Incidunt facere et obcaecati distinctio assumenda repudiandae, vero mollitia nam deleniti eveniet dicta esse reiciendis nobis officia.</p>
+          <img src="images/blog_2.jpg" alt="desert photo, number 2" class="blogImages">
+          <p class="ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et fugiat tenetur quam sit iure autem non vero, illo, voluptas quasi ratione veniam reprehenderit atque nam iste animi laborum deserunt porro molestias qui dolores? Totam a beatae libero in quis debitis deleniti nulla ex veniam eveniet ratione maxime, at quisquam non accusamus cupiditate nobis tempora eum porro enim eligendi sit consequatur, numquam. Rem, harum, autem. Consectetur laboriosam, similique quaerat hic ipsam porro sed mollitia corporis illum recusandae? Ipsum facere consequatur, sed deleniti quod. Incidunt facere et obcaecati distinctio assumenda repudiandae, vero mollitia nam deleniti eveniet dicta esse reiciendis nobis officia.</p>
+        </section>
+      </section>
+      <section id="column-two">
+        <article id="about" class="about">
+          <h3 >About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus harum deserunt enim neque. Ipsum corporis vero numquam, enim quis, quisquam quasi totam sequi asperiores, repellat, atque. Numquam sunt, cupiditate quas.</p>
+          <p>Nesciunt atque laudantium, cumque autem rerum reiciendis! Excepturi vero optio ea odio officiis, vel, error dicta nostrum illo asperiores ad architecto ipsa! Ex ducimus sunt deleniti facilis quia reiciendis, adipisci.</p>
+          <img src="images/about.jpg" alt="desert photo, number 2" class="aboutImages">
+        </article>
+        <article class="recentIssues">
+          <h3>Recent Issues</h3>
+          <!-- emmet command ul>li.item${}*6>a then tab-->
+            <ul>
+              <li class="issue1"><span><a href="">Issue Nineteen - Camping</a></span></li>
+              <li class="issue2"><span><a href="">Issue Eighteen - Food</a></span></li>
+              <li class="issue3"><span><a href="">Issue Seventeen - Signs</a></span></li>
+              <li class="issue5"><span><a href="">Issue Fifteen - Carnivals</a></span></li>
+              <li class="issue6"><span><a href="">Issue Fourteen - Gatherings</a></span></li>
+            </ul>
+        </article>
+      </section>
+    </main>
+
+
+    <!-- <fieldset id="contact">
+      <h2>Leave a Comment</h2>
+      <input class="input name" id="user_name" placeholder="NAME" type="text">
+      <p class="error-message">Please enter your full name.</p>
+      <input class="input email" id="user_email" placeholder="EMAIL*" type="text">
+      <p class="error-message">Please enter an email address.</p>
+      <input class="input comment" id="user_comment" placeholder="COMMENT*" type="text">
+      <p class="error-message">Please enter a comment.</p>
+      <input class="input submit" type="submit" value="SUBMIT">
+    </fieldset> -->
+
+    <section id="contact">
+  		<div class="wrap">
+  		<h2>Leave a Comment</h2>
+  			<form class="contact" novalidate>
+  				<div class="form-group">
+  					<input type="text" placeholder="Full Name*" >
+  					<p class="error-message">Please enter your full name.</p>
+  				</div>
+  				<div class="form-group">
+  					<input type="email" placeholder="Email*" >
+  					<p class="error-message">Please enter an email address.</p>
+  				</div>
+
+  				<div class="form-group">
+  					<textarea name="" id="" cols="30" rows="10" placeholder="Comment*"></textarea>
+  					<p class="error-message">Please enter a comment.</p>
+  				</div>
+  				<input class="input submit" type="submit" value="SUBMIT">
+  			</form>
+  		</div>
+  	</section>
+
+
+    <footer>
+      <div class="social">
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+     </div>
+     <input class="input name" id="user_email2" placeholder="email address" type="text">
+     <input class="input submit" type="submit" value="Keep In Touch">
+      <section class="lineCopyRight">
+        <p class="copyright">&#169; 2018 Juan Carlos Collins</p>
+      </section>
+    </footer>
+  </div> <!--wrapper -->
+
+</body>
+
+</html>

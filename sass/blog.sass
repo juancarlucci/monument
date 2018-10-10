@@ -1,0 +1,130 @@
+// variables
+$fontMain: "Relaway"
+$fontPara: "Lato"
+
+//colors
+$white: #fff
+$color_trout: #44545e
+$color_gumbo: #7b98aa
+$color_humming_bird: #D4F2F5
+$color_gunsmoke: #7c878e
+$color_carnation: #ed5254
+$color_bali_hai: #899ead
+
+//media queries
+//http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+$information-phone: "only screen and (max-width : 20.000em)"
+$break-small: 27em
+
+*
+  box-sizing: border-box
+
+
+body
+  font-size: 16px
+  color: $color_trout
+  margin: 0
+  width: 100%
+
+
+// .hamburger
+//   display: none
+//   @media screen and (max-width: $break-small)
+//       display: block
+//       color: $white
+//       font-size: 1.7rem
+//       position: absolute
+//       top: 1em
+//       left: 1.3em
+
+
+h1
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  color: $white
+  text-transform: uppercase
+  letter-spacing: 0.938em
+  font-size: 2.188em
+  @media screen and (max-width: $break-small)
+    font-size: 1.875em
+    letter-spacing: .6em
+
+#blog-header
+  height: 16.938em
+  width: 100%
+  background-color: $color_humming_bird
+  /* https://stackoverflow.com/questions/42450098/positioning-text-over-image-html-css
+  display: flex
+  align-items: center
+  justify-content: center
+  background-image: url("../images/blog_header_bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+
+
+
+h2,
+h3
+  font-family: $fontMain, sans-serif
+  font-weight: 600
+  color: $color_trout
+  text-transform: uppercase
+  letter-spacing: 0.063em
+  font-weight: 700
+  font-size: 1.5em
+
+#blog-entries
+  width: 100%
+
+p
+  color: $color_trout
+  font-family: $fontPara, serif
+  font-weight: 400
+  font-size: .85em
+  font-weight: 300
+  line-height: 2em
+
+main
+  width: 100%
+  margin: 5em
+  @media screen and (max-width: $break-small)
+    margin: 2em
+
+.flex
+  display: flex
+
+#column-one
+  width: 55%
+  margin-right: 3em
+  @media screen and (max-width: $break-small)
+    width: 100%
+
+#column-two
+  width: 21%
+  margin-top: 4.375em
+  color: $color_gunsmoke
+  @media screen and (max-width: $break-small)
+    display: none
+
+#blogDate
+  letter-spacing: 0.188em
+  font-style: italic
+  order: 2
+
+.about img
+  padding: 2.500em 0
+
+img
+  max-width: 100%
+
+.recentIssues a
+  font-family: $fontPara, sans-serif
+  font-weight: 400
+  text-decoration: none
+  letter-spacing: 0.063em
+  font-weight: 600
+  font-size: .7em
+  margin: 0 1.250em
+  border-bottom: 0.125em solid transparent

@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Relaway", sans-serif;
+  font-weight: 600;
+  color: #44545e;
+  text-transform: uppercase;
+  letter-spacing: 0.938em;
+  font-size: 2.188em; }
+  @media screen and (max-width: 26.25em) {
+    h1 {
+      font-size: 1.875em;
+      letter-spacing: 0.6em; } }
+
+#landing-header {
+  height: 100em;
+  background-image: url("../images/home_header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%; }
+  #landing-header h1,
+  #landing-header h2,
+  #landing-header a {
+    color: #fff; }
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.archive h2 {
+  text-align: center;
+  margin: 6em 0 3em; }
+
+.card {
+  height: 53em;
+  width: 22.5em;
+  flex: 1 1 22.5em;
+  text-align: center; }
+  .card img {
+    max-width: 22em;
+    max-height: 22em; }
+  .card h3 {
+    text-align: center; }
+  .card p {
+    text-align: center;
+    overflow: hidden;
+    height: 12em;
+    margin: auto; }
+    .card p ::after {
+      content: "..."; }
+  .card button {
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0.063em solid #7c878e; }
+  @media screen and (max-width: 26.25em) {
+    .card {
+      height: 44em; } }
+
+.about {
+  background-color: #D4F2F5;
+  padding: 7.5em;
+  text-align: center; }
+  @media screen and (max-width: 26.25em) {
+    .about {
+      padding: 7.5em 0.5em; } }
+
+.gallery h2 {
+  text-align: center;
+  margin: 6em 0 3em; }
+.gallery h3 {
+  text-align: center;
+  margin: 0 0 3em; }
+.gallery img {
+  padding: 0.3em;
+  transition: all 1s;
+  -webkit-transition: all 1s; }
+  .gallery img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%); }
+
+/*# sourceMappingURL=landing.css.map */

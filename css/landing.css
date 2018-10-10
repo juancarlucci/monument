@@ -24,7 +24,8 @@ h1 {
   #landing-header h1,
   #landing-header h2,
   #landing-header a {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
 
 .flex {
   display: flex;

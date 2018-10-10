@@ -123,7 +123,7 @@ if (fieldType === 'email') {
 }
 
 ```
-![Monument-Front-end validation](readme-assets/validation.jpg "Front-end validation")
+![Monument-Front-end validation](readme-assets/validation.jpg =342X530 "Front-end validation")
 
 
 #### 6. Smooth scrolling across pages

@@ -124,7 +124,7 @@ if (fieldType === 'email') {
 
 ```
 
-<img src="readme-assets/validation.jpg" alt="Front-end validation" width="500"/>
+<img src="readme-assets/validation.jpg" alt="Front-end validation" width="250"/>
 
 #### 6. Smooth scrolling across pages
 

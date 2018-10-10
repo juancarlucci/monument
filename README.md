@@ -21,7 +21,7 @@ HTML5, CSS3, Sass, jQuery, JavaScript
 
 ## Code Snippets
 
-#### Use of Sass variables and nested rules
+#### 1. Use of Sass variables and nested rules
 
 ```
 style.sass
@@ -123,7 +123,7 @@ if (fieldType === 'email') {
 }
 
 ```
-![Monument-Front-end validation](readme-assets/validation.jpg =342X530 "Front-end validation")
+![Monument-Front-end validation](readme-assets/validation.jpg width="342" height="530" "Front-end validation")
 
 
 #### 6. Smooth scrolling across pages
@@ -142,3 +142,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 ```
+7. Use HTML5 and CSS Validators
+
+![HTML5 validation](readme-assets/validation-html.jpg width="500" height="30" "HTML validation")
+![CSS3 validation](readme-assets/validation-css.jpg width="500" height="30" "CSS validation")
